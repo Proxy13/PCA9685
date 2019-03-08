@@ -1,0 +1,16 @@
+root@raspberrypi:/home/pi/Desktop/Adafruit_PWM_Servo_Driver# python tes2.py 
+informations::::::
+Angle Between 0-180 Deg
+Cycle ? 5
+Min Angle ? 30
+Max Angle ? 60
+('Fmin value : ', 225.0)
+('Fmax value : ', 450.0)
+('tur', 5)
+Traceback (most recent call last):
+  File "tes2.py", line 53, in <module>
+    pwm.setPWM(1, 0, fmin)
+  File "/home/pi/Desktop/Adafruit_PWM_Servo_Driver/Adafruit_PWM_Servo_Driver.py", line 84, in setPWM
+    self.i2c.write8(self.__LED0_OFF_L+4*channel, off & 0xFF)
+TypeError: unsupported operand type(s) for &: 'float' and 'int'
+
